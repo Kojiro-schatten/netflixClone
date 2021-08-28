@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { requests } from '../../axios/api/request'
 import axios from '../../axios/axios'
+import './Banner.scss'
 
 type movieProps = {
   title?: string
@@ -43,7 +44,7 @@ export const Banner: React.FC = () => {
       }}
     >
       <div className="Banner-contents">
-        <h1 className="banner-title">
+        <h1 className="Banner-title">
           {movie?.title || movie?.name || movie?.orignal_name}
         </h1>
         <div className="Banner-buttons">
